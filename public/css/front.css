@@ -1,0 +1,158 @@
+@charset "UTF-8";
+body {
+  color: #5a4430;
+  background-color: #e8e1d4;
+}
+
+.navbar-larabel {
+  background-color: #c1a57b;
+}
+
+.navbar-brand {
+  color: #c1a57b !important;
+}
+
+.header .logo {
+  width: 120px;
+  height: 82px;
+}
+
+.headline .caption {
+  position: relative;
+}
+.headline .caption .image img {
+  width: 600px;
+}
+.headline .caption .title {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.headline .caption .title h1 {
+  color: #fff;
+  font-size: 1.2em;
+}
+.headline .caption .body {
+  font-size: 0.8em;
+}
+
+.posts {
+  width: 60%;
+}
+.posts .post {
+  padding: 5px;
+}
+.posts .post .date {
+  font-size: 1em;
+  color: #999999;
+}
+.posts .post .title {
+  font-size: 1em;
+  font-weight: bold;
+  color: #5a4430;
+  text-decoration: none;
+  line-height: 1.6;
+  transition: 0.2s;
+}
+.posts .post .title::after {
+  content: "";
+  transition: 0.2s;
+}
+.posts .post .title:hover {
+  opacity: 0.7;
+}
+.posts .post .body {
+  font-size: 0.8em;
+}
+.posts .post .image img {
+  width: 250px;
+}
+
+.front-menu {
+  font-size: 1em;
+  display: flex;
+  /*  左右均等に配置※すべてのマージン幅が同じ  */
+  justify-content: space-between;
+}
+
+/* 子要素 */
+.front-menu p {
+  font-size: 1em;
+  height: 50px;
+  width: 100px;
+  border: solid;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date, .title {
+  margin: 0 10px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #5a4430;
+  padding-bottom: 3px; /* テキストと下線の間隔 */
+  background-image: linear-gradient(#5a4430, #5a4430);
+  background-repeat: no-repeat;
+  background-position: bottom center; /* 下線の初期位置 */
+  background-size: 0 1px; /* 下線のサイズ（横幅、高さ） */
+  transition: background-size 0.3s;
+}
+
+.menu-link:hover {
+  background-position: bottom center; /* 下線のホバー時位置 */
+  background-size: 100% 1px; /* 下線の横幅を100%にする */
+}
+
+.information-box {
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  background: #e8e1d4; /*背景色*/
+  border: solid 1px #5a4430; /*線*/
+  border-radius: 10px; /*角の丸み*/
+}
+
+.information-box p {
+  margin: 0;
+  padding: 0;
+}
+
+.information-readmore {
+  text-decoration: none;
+  color: #5a4430;
+  text-align: right;
+}
+
+.information-readmore::after {
+  content: "";
+  transition: 0.2s;
+}
+
+.information-readmore:hover {
+  opacity: 0.7;
+}
+
+.img-fluid {
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.fixed-size {
+  width: 300px; /* 幅を100pxに固定 */
+  height: 200px; /* 高さを50pxに固定 */
+  -o-object-fit: cover;
+     object-fit: cover; /* 画像を枠に収める */
+}
+
+.right-align {
+  float: right;
+  margin-right: 10px; /* 画像とテキストの間に適度なスペースを追加 */
+}
