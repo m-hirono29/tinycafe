@@ -8,7 +8,7 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <a href="{{ route('admin.information.add') }}" role="button" class="btn btn-primary">新規作成</a>
+                <a href="{{ route('admin.information.add') }}" role="button" class="btn btn-primary button-admin">新規作成</a>
             </div>
             <div class="col-md-8">
                 <form action="{{ route('admin.information.index') }}" method="get">
@@ -19,22 +19,22 @@
                         </div>
                         <div class="col-md-2">
                             @csrf
-                            <input type="submit" class="btn btn-primary" value="検索">
+                            <input type="submit" class="btn btn-primary button-admin" value="検索">
                         </div>
                     </div>
                 </form>
             </div>
         </div>
         <div class="row">
-            <div class="list-information col-md-12 mx-auto">
+            <div class="list-information col-md-10 mx-auto">
                 <div class="row">
-                    <table class="table table-dark">
+                    <table class="table-admin">
                         <thead>
                             <tr>
-                                <th width="10%">id</th>
-                                <th wicth="10%">周知日</th>
+                                <th width="5%">id</th>
+                                <th wicth="5%">周知日</th>
                                 <th width="20%">タイトル</th>
-                                <th width="20%">本文</th>
+                                <th width="50%">本文</th>
                                 <th width="10%">操作</th>
                             </tr>
                         </thead>

@@ -1,54 +1,54 @@
+@charset "UTF-8";
 body {
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #000;
-  color: #fff;
+  background-color: #e8e1d4;
+  color: #5a4430;
 }
 
 .navbar-larabel {
-  background-color: #000;
+  background-color: #5a4430;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
 .navbar-brand {
-  color: #fff !important;
+  color: #5a4430 !important;
 }
 
 .nav-link {
-  color: #fff !important;
+  color: #5a4430 !important;
 }
 
 .table-dark {
-  color: #fff;
-}
-
-.list-group-item {
-  border-color: #fff;
-  background-color: #000;
+  color: #5a4430;
 }
 
 .register-box {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #e8e1d4;
+  color: #5a4430;
 }
 
 .register-header {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: #e8e1d4;
+  margin: 15 5 5 15;
 }
 
 .register-body {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: #e8e1d4;
 }
 
 .login-box {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #e8e1d4;
+  color: #5a4430;
 }
 
 .login-header {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: #e8e1d4;
+  margin: 15 5 5 5;
 }
 
 .login-body {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: #e8e1d4;
 }
 
 .form-group {
@@ -56,13 +56,44 @@ body {
 }
 
 .list-group-item {
-  color: #fff;
-  border-color: #fff;
-  background-color: #000;
+  color: #5a4430;
+  border-color: #5a4430;
+  background-color: #e8e1d4;
 }
 
 .migiyosetest {
   display: flex;
   justify-content: flex-end;
   margin-right: 65;
+}
+
+.button-admin {
+  text-decoration: none;
+  background-color: #5a4430;
+  border-color: #5a4430;
+  justify-content: center;
+}
+
+.button-admin:hover {
+  background-color: #5a4430;
+  border-color: #5a4430;
+  opacity: 0.7;
+}
+
+.parent {
+  display: grid;
+  place-items: center; /* 水平方向および垂直方向の中央 */
+  height: 50vh; /* 親要素の高さを指定 */
+}
+
+.table-admin {
+  color: #5a4430;
+  border-color: #5a4430;
+  background-color: #e8e1d4;
+}
+
+.table-admin, .table-admin th, .table-admin td {
+  border: 1px solid #5a4430; /* 罫線のスタイルを指定 */
+  color: #5a4430;
+  height: 30px;
 }

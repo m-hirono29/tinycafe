@@ -1,11 +1,13 @@
 @extends('layouts.admin')
 
+@section('title', '管理者サインアップ')
+
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="register-box card text-white">
-                    <div class="register-header card-header mx-auto">{{ __('validation.attributes.Register') }}</div>
+                <div class="register-box card">
+                    <div class="register-header mx-auto">{{ __('validation.attributes.Register') }}</div>
     
                     <div class="register-body card-body">
                         <form method="POST" action="{{ route('register') }}">
@@ -63,7 +65,7 @@
     
                             <div class="row mb-0">
                                 <div class="col-md-6 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-primary button-admin">
                                         {{ __('validation.attributes.signup') }}
                                     </button>
                                 </div>

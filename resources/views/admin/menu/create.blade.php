@@ -23,7 +23,12 @@
                     <div class="form-group row">
                         <label class="col-md-3">メニューカテゴリ</label>
                         <div class="col-md-8">
-                            <input type="text" class="form-control" name="category" value="{{ old('category') }}">
+                            <select name="category">
+                                <option>ドリンク</option>
+                                <option>フード</option>
+                                <option>デザート</option>
+                                <option>セット</option>
+                            </select>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -46,7 +51,7 @@
                     </div>
                     @csrf
                     <div class="migiyosetest">
-                        <input type="submit" class="btn btn-primary" value="投稿">
+                        <input type="submit" class="btn btn-primary button-admin" value="投稿">
                     </div>
                 </form>
             </div>

@@ -10,9 +10,12 @@ class MenuController extends Controller
 {
     public function index() 
     { 
-        $menus = Menu::all(); // データベースからメニューを取得 
+        $foodMenus = Menu::where('category','フード')->get(); // データベースからメニューを取得 
+        $drinkMenus = Menu::where('category','ドリンク')->get();
+        $desertMenus = Menu::where('category','デザート')->get();
+        $setMenus = Menu::where('category','セット')->get();
         
-        return view('menu.index', compact('menus')); 
+        return view('menu.index', compact('foodMenus','drinkMenus','desertMenus','setMenus')); 
     }
     
     public function store(Request $request) 

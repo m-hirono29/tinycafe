@@ -146,8 +146,8 @@ body {
 }
 
 .fixed-size {
-  width: 300px; /* 幅を100pxに固定 */
-  height: 200px; /* 高さを50pxに固定 */
+  width: 150px; /* 幅を100pxに固定 */
+  height: 90px; /* 高さを50pxに固定 */
   -o-object-fit: cover;
      object-fit: cover; /* 画像を枠に収める */
 }
@@ -155,4 +155,26 @@ body {
 .right-align {
   float: right;
   margin-right: 10px; /* 画像とテキストの間に適度なスペースを追加 */
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column; /* 縦に並べる */
+  align-items: center; /* 横方向に中央揃え */
+  gap: 10px; /* 各行の間隔を設定 */
+}
+
+.menu-item {
+  display: flex;
+  align-items: center; /* 要素の中央揃え */
+  justify-content: space-between; /* 要素間のスペースを均等にする */
+  width: 100%; /* 幅を100%にして中央揃えが崩れないようにする */
+  max-width: 800px; /* 全体の最大幅を設定（例: 800px） */
+  gap: 200px; /* 各要素間の間隔を設定 */
+}
+
+.menu-item span {
+  line-height: 1.5; /* テキストの高さ（行間）を1.5に設定 */
+  margin: 0; /* テキスト周りの余白を調整 */
+  padding: 0; /* テキスト周りの内側余白を調整 */
 }

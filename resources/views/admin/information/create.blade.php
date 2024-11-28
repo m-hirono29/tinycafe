@@ -46,7 +46,7 @@
                     </div>
                     @csrf
                     <div class="migiyosetest">
-                        <input type="submit" class="btn btn-primary" value="投稿">
+                        <input type="submit" class="btn btn-primary button-admin" value="投稿">
                     </div>
                 </form>
             </div>
