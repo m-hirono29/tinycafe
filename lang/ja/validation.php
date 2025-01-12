@@ -169,7 +169,7 @@ return [
         'category' => 'メニューカテゴリ',
         'menu_name' => 'メニュー名',
         'price' => '価格',
-        'Register' => 'Sign Up',
+        'Register' => 'Sign',
         'Name' => '名前',
         'email' => 'メールアドレス',
         'password' => 'パスワード',
@@ -177,4 +177,24 @@ return [
         'signup' => '登録'
         ],
 
+];
+
+return [
+    'regex' => ':attribute の形式が正しくありません。',
+    'custom' => [
+        'phonenumber' => [
+            'regex' => '電話番号は適切な形式（例：090-1234-5678）で入力してください。',
+        ],
+    ],
+];
+
+return [
+    'min' => ':attribute は :min 人以上を入力してください。',
+    'max' => ':attribute は :max 人以下を入力してください。',
+    'custom' => [
+        'number_of_people' => [
+            'min' => '人数は1人以上である必要があります。',
+            'max' => '人数は10人以下である必要があります。',
+        ],
+    ],
 ];

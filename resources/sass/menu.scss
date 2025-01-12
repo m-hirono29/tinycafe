@@ -48,3 +48,15 @@ body {
     border-color: #fff;
     background-color: #000;
 }
+
+.fixed-size {
+    width: 150px;  /* 画像の幅と一致させる */
+    height: 150px; /* 画像の高さと一致させる */
+    object-fit: cover; /* 画像がある場合はサイズを調整する */
+}
+
+.empty-image-box {
+    width: 150px;  /* 画像の幅と一致させる */
+    height: 150px; /* 画像の高さと一致させる */
+    background-color: #f0f0f0; /* 画像がない場合の背景色 */
+}

@@ -27,4 +27,9 @@ class CafeController extends Controller
     {
         return view('cafe.concept');
     }
+    
+    public function reservation()
+    {
+        return view('reservation.create');
+    }
 }

@@ -13,7 +13,7 @@
                 <a href="{{ route('admin.menu.index') }}" role="button" class="btn btn-primary button-admin">メニュー一覧</a>
         </div>
         <div class="row col-md-4">
-                <a href="{{ route('admin.cafe.index') }}" role="button" class="btn btn-primary button-admin">予約確認</a>
+                <a href="{{ route('admin.reservation.index') }}" role="button" class="btn btn-primary button-admin">予約確認</a>
         </div>
         <div class="col-md-2">
             @csrf

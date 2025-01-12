@@ -97,3 +97,15 @@ body {
   color: #5a4430;
   height: 30px;
 }
+
+.space-infocreate {
+  margin-left: 85px;
+}
+
+.space-admin {
+  margin-right: -110px;
+}
+
+.space-sarch {
+  margin-right: -30px;
+}

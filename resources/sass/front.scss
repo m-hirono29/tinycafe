@@ -180,11 +180,52 @@ body {
     justify-content: space-between; /* 要素間のスペースを均等にする */
     width: 100%; /* 幅を100%にして中央揃えが崩れないようにする */
     max-width: 800px; /* 全体の最大幅を設定（例: 800px） */
-    gap: 200px; /* 各要素間の間隔を設定 */
+    gap: 150px; /* 各要素間の間隔を設定 */
 }
 
 .menu-item span {
     line-height: 1.5; /* テキストの高さ（行間）を1.5に設定 */
     margin: 0; /* テキスト周りの余白を調整 */
     padding: 0; /* テキスト周りの内側余白を調整 */
+    width: 200px;
+}
+
+/* プルダウンの背景色、ボーダー、影など */
+.custom-select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 16px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* フォーカス時の色を変更 */
+.custom-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* デフォルトのオプション（"選択してください"）の色を変更 */
+.custom-select option:first-child {
+    color: #999;
+}
+
+/* オプションの選択時の背景色 */
+.custom-select option:selected {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.button-front {
+    text-decoration: none;
+    background-color: #5a4430;
+    border-color: #5a4430;
+    justify-content: center;
+}
+
+.button-front:hover {
+    background-color: #5a4430;
+    border-color: #5a4430;
+    opacity: 0.7;
 }

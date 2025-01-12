@@ -13,7 +13,13 @@
                             <li class="menu-item">
                                 <span>{{ $menu->menu_name }}</span>
                                 <span>¥{{ $menu->price }}</span>
-                                <img src="{{ Storage::url('public/image/' . $menu->image_path) }}" class="fixed-size" alt="Image">
+                                    <!-- 画像が存在する場合のみ表示 -->
+                                @if ($menu->image_path)
+                                    <img src="{{ Storage::url('public/image/' . $menu->image_path) }}" class="fixed-size" alt="Image">
+                                @else
+                                    <!-- 画像がない場合は空のボックスを表示して同じ高さを確保 -->
+                                    <div class="empty-image-box fixed-size"></div>
+                                @endif
                             </li> 
                             <hr color="#c0c0c0">
                         @endforeach 
@@ -29,8 +35,15 @@
                         @foreach($foodMenus as $menu) 
                             <li class="menu-item">
                                 <span>{{ $menu->menu_name }}</span>
-                                <span>{{ $menu->price }}</span>
-                                <img src="{{ Storage::url('public/image/' . $menu->image_path) }}" class="fixed-size" alt="Image"></li> 
+                                <span>¥{{ $menu->price }}</span>
+                                <!-- 画像が存在する場合のみ表示 -->
+                                @if ($menu->image_path)
+                                    <img src="{{ Storage::url('public/image/' . $menu->image_path) }}" class="fixed-size" alt="Image">
+                                @else
+                                    <!-- 画像がない場合は空のボックスを表示して同じ高さを確保 -->
+                                    <div class="empty-image-box fixed-size"></div>
+                                @endif
+                            </li> 
                             <hr color="#c0c0c0">
                         @endforeach
                         </ul>
@@ -38,25 +51,45 @@
             </div>
             <div class="col-md-10 mx-auto">
                 <h2>デザートメニュー</h2>
-                <hr color="#c0c0c0">
+                <div class="menu-container">
                     <ul> 
                         @foreach($desertMenus as $menu) 
-                            <li>{{ $menu->menu_name }}　　 　 {{ $menu->price }}　　　　　　
-                            <img src="{{ Storage::url('public/image/' . $menu->image_path) }}" class="fixed-size" alt="Image"></li> 
+                            <li class="menu-item">
+                                <span>{{ $menu->menu_name }}</span>
+                                <span>¥{{ $menu->price }}</span>
+                                <!-- 画像が存在する場合のみ表示 -->
+                                @if ($menu->image_path)
+                                    <img src="{{ Storage::url('public/image/' . $menu->image_path) }}" class="fixed-size" alt="Image">
+                                @else
+                                    <!-- 画像がない場合は空のボックスを表示して同じ高さを確保 -->
+                                    <div class="empty-image-box fixed-size"></div>
+                                @endif
+                            </li> 
                             <hr color="#c0c0c0">
                         @endforeach
                     </ul>
+                </div>
             </div>
             <div class="col-md-10 mx-auto">
                 <h2>セットメニュー</h2>
-                <hr color="#c0c0c0">
+                <div class="menu-container">
                     <ul> 
                         @foreach($setMenus as $menu) 
-                            <li>{{ $menu->menu_name }}　　 　 {{ $menu->price }}　　　　　　
-                            <img src="{{ Storage::url('public/image/' . $menu->image_path) }}" class="fixed-size" alt="Image"></li> 
+                            <li class="menu-item">
+                                <span>{{ $menu->menu_name }}</span>
+                                <span>¥{{ $menu->price }}</span>
+                                <!-- 画像が存在する場合のみ表示 -->
+                                @if ($menu->image_path)
+                                    <img src="{{ Storage::url('public/image/' . $menu->image_path) }}" class="fixed-size" alt="Image">
+                                @else
+                                    <!-- 画像がない場合は空のボックスを表示して同じ高さを確保 -->
+                                    <div class="empty-image-box fixed-size"></div>
+                                @endif
+                            </li> 
                             <hr color="#c0c0c0">
                         @endforeach
                     </ul>
+                </div>
             </div>
         </div>
     </div>

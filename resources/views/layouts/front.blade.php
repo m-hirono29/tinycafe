@@ -58,11 +58,12 @@
                     <div class="row">
                         <div class="headline col-md-8 mx-auto">
                             <div class="row">
-                                <div class="col-md-7">
+                                <div class="col-md-10">
                                     <div class="caption mx-auto">
                                         <div class="front-menu">
                                             <a href="/concept" class="front-menu p menu-link">このカフェについて</a>
                                             <a href="/menu" class="front-menu p menu-link">メニュー</a>
+                                            <a href="../reservation/create" class="front-menu p menu-link">ご予約</a>
                                         </div>
                                     </div>
                                 </div>
