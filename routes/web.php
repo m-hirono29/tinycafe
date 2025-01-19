@@ -53,7 +53,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 use App\Http\Controllers\CafeController as PublicCafeController;
-Route::get('/', [PublicCafeController::class, 'index'])->name('information.index');
+Route::get('/', [PublicCafeController::class, 'index'])->name('home.index');
     Route::get('/concept', [PublicCafeController::class, 'concept'])->name('concept');
     Route::get('/information/{id}', [App\Http\Controllers\CafeController::class, 'show'])->name('information.show');
     Route::get('/reservation/create', [PublicCafeController::class, 'create'])->name('reservation.create');
