@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
                 <h2>お知らせ編集</h2>
-                <form action="{{ route('admin.information.update') }}" method="post" enctype="multipart/form-data">
+                <form action="{{ route('admin.information.update', $information_form->id) }}" method="post" enctype="multipart/form-data">
                     @if (count($errors) > 0)
                         <ul>
                             @foreach($errors->all() as $e)
@@ -47,10 +47,13 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-md-10">
+                        <div class="col-md-12">
                             <input type="hidden" name="id" value="{{ $information_form->id }}">
                             @csrf
-                            <input type="submit" class="btn btn-primary button-admin" value="更新">
+                            <div class="d-flex justify-content-between">
+                                    <!-- 更新ボタン -->
+                                <input type="submit" class="btn btn-primary button-admin" value="更新">
+                            </div>
                         </div>
                     </div>
                 </form>

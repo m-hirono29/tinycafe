@@ -94,4 +94,5 @@ class InformationController extends Controller
         
         return redirect('admin/information');
     }
+
 }
